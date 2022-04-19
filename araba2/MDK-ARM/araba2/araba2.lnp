@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"araba2\startup_stm32f103xb.o"
+"araba2\my_nrf24.o"
+"araba2\main.o"
+"araba2\stm32f1xx_it.o"
+"araba2\stm32f1xx_hal_msp.o"
+"araba2\stm32f1xx_hal_gpio_ex.o"
+"araba2\stm32f1xx_hal_spi.o"
+"araba2\stm32f1xx_hal_spi_ex.o"
+"araba2\stm32f1xx_hal_tim.o"
+"araba2\stm32f1xx_hal_tim_ex.o"
+"araba2\stm32f1xx_hal_uart.o"
+"araba2\stm32f1xx_hal.o"
+"araba2\stm32f1xx_hal_rcc.o"
+"araba2\stm32f1xx_hal_rcc_ex.o"
+"araba2\stm32f1xx_hal_gpio.o"
+"araba2\stm32f1xx_hal_dma.o"
+"araba2\stm32f1xx_hal_cortex.o"
+"araba2\stm32f1xx_hal_pwr.o"
+"araba2\stm32f1xx_hal_flash.o"
+"araba2\stm32f1xx_hal_flash_ex.o"
+"araba2\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "araba2\araba2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "araba2.map" -o araba2\araba2.axf
